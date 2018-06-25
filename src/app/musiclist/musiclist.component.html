@@ -1,0 +1,13 @@
+<mat-accordion *ngFor="let music of musicList">
+        <mat-expansion-panel>
+      
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+             {{music}}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+      
+        
+              <button (click)="play(music)" mat-button>Play me!</button>
+        </mat-expansion-panel>  
+</mat-accordion>      
