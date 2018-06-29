@@ -7,10 +7,11 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import {MatButtonModule} from '@angular/material/button';
+import * as io from 'socket.io-client';
 @NgModule({
   declarations: [
     AppComponent,
-    MusiclistComponent
+    MusiclistComponent,
   ],
   imports: [
     BrowserModule,
@@ -19,7 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatInputModule,
     MatFormFieldModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
